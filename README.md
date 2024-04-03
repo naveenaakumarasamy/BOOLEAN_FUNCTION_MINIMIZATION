@@ -1,4 +1,4 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+# EX NO:2 BOOLEAN_FUNCTION_MINIMIZATION
 
 **AIM:**
 
@@ -33,18 +33,37 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by:NAveenaa A K
 
+RegisterNumber:212222230094
+```
+module exp22(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
 
+```
 **RTL realization**
 
-**Output:**
+![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/ed911319-3d25-4ad8-be85-1145b1fd0f8f)
 
-**RTL**
+**Truth table**
+
+![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/af782e45-7db6-4eb4-8db6-d8f3b73b310c)
 
 **Timing Diagram**
+
+![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/22cb916b-719e-407f-a1af-9768d661857b)
+
 
 **Result:**
 
